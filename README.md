@@ -5,7 +5,7 @@ We use OpenAI's Whisper to create our speech-to-text subtitles for our videos an
 ## Installation
 To set up your environment, run:
 
-conda create -n <environment-name> --file req.txt
+  conda create -n <environment-name> --file req.txt
   
   
 From https://huggingface.co/ggerganov/whisper.cpp/tree/main, download "ggml-base.en.bin" and drop it into SubsGen/whisper-bin-x64. 
