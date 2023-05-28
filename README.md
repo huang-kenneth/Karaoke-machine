@@ -1,4 +1,4 @@
-## Youtube to mp4 Lyric Generator
+## Karaoke Machine / Youtube to mp4 Lyric Generator
 This project aims to recreate a karaoke machine with improvements to the system. Generally, karaoke spots have a limited selection of songs - our code allows the user to generate their own karaoke video with just a Youtube link!
 We use OpenAI's Whisper to create our speech-to-text subtitles for our videos and use other libraries to process and create our final video. 
 
