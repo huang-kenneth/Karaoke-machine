@@ -1,4 +1,6 @@
 ## Youtube to mp4 Lyric Generator
+We create a lyric video and remove vocals - just like videos when we go karaokeing! 
+
 We use OpenAI's Whisper to create our speech-to-text subtitles for our videos and use other libraries to process and create our final video. 
 
 This project is ultimately part of a bigger project that aims to recreate a karaoke machine with improvements to the system. Generally, karaoke spots have a limited selection of songs - our code allows the user to generate their own karaoke/lyric video with just a Youtube link!
@@ -15,6 +17,7 @@ From https://huggingface.co/ggerganov/whisper.cpp/tree/main, download "ggml-base
 Note: to use other models, download a different model and change the code's input model. The default is "ggml-base.en.bin". 
     
 ## Example output
+Instrumentals + Lyrics: 
 https://github.com/huang-kenneth/Karaoke-machine/assets/67389462/362cd9ab-3096-479d-b7cd-e3a37b3d34c6
 
 ## To do (Mostly UI/Code Cleaning Changes):
