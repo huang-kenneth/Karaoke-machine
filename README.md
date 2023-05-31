@@ -18,6 +18,7 @@ Note: to use other models, download a different model and change the code's inpu
     
 ## Example output
 Instrumentals + Lyrics: 
+
 https://github.com/huang-kenneth/Karaoke-machine/assets/67389462/362cd9ab-3096-479d-b7cd-e3a37b3d34c6
 
 ## To do (Mostly UI/Code Cleaning Changes):
