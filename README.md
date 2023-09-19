@@ -15,17 +15,27 @@ conda create -n <environment-name> --file req.txt
 From https://huggingface.co/ggerganov/whisper.cpp/tree/main, download "ggml-base.en.bin" and drop it into SubsGen/whisper-bin-x64. 
   
 Note: to use other models, download a different model and change the code's input model. The default is "ggml-base.en.bin". 
-    
+
+After setup, enter the virtual environment and run:
+```
+python app.py
+```
+
+You should see a homepage after going to the given url in the console (ex. http://127.0.0.1:5000/):
+![Home Page](/assets/screenshots/home.png?raw=true "Home Page")
+
+Now enter a valid Youtube Link, select vocal preferences, and click run script! A video will display on the page once code is done running. 
+
 ## Example output
 Instrumentals + Lyrics: 
 
 https://github.com/huang-kenneth/Karaoke-machine/assets/67389462/362cd9ab-3096-479d-b7cd-e3a37b3d34c6
 
+## Update 9/15/23
+Added a front-end GUI using Flask. 
+Adjusted code to work with GUI, added new folders and changes output destinations. 
+
 ## To do (Mostly UI/Code Cleaning Changes):
-  - Allow users to easily add or remove vocals when creating their song. Currently is a parameter in the code, will need to add a better UI.
   - Make selecting Whisper models easier for users. 
-  - Better UI for where to paste the Youtube link.
   - Allow users to change the background of video. 
   - Follow words as song progresses (like karaoke videos)
-  - Delete unneccesary files after done running.
-  - Choose whether to overwrite or skip existing files. 

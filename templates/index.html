@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lyric Video Generator</title>
+</head>
+<body>
+    <h1>Lyric Video Generator</h1>
+    <form method="POST" action="/run_script">
+        <label for="ytLink">YouTube Link:</label><br>
+        <input type="text" id="ytLink" name="ytLink"><br><br>
+        <label for="includeVocals">Instrumental/Vocals?:</label><br>
+        <select name="includeVocals">
+            <option value="True">Instrumentals+Vocals</option>
+            <option value="False">Instrumentals Only</option>
+        </select>
+        <br>
+        <button type="submit">Run Script</button>
+    </form>
+    {% if result %}
+    <h2>Result:</h2>
+    <video width="960" height="540" controls>
+        <source src="{{ url_for('static', filename='output.mp4') }}" type="video/mp4">
+      </video>
+    {% endif %}
+</body>
+</html>
